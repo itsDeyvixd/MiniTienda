@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PagPrincipal from './pages/PagPrincipal';
+import PagGaleria from './pages/PagGaleria';
+import PagProducto from './pages/PagProducto';
+import PagContacto from './pages/PagContacto';
+import PagTable from './pages/PagTable'; 
+import CompNavbar from './components/CompNavbar';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <CompNavbar />
+      <Routes>
+        <Route path="/" element={<PagPrincipal />} />
+        <Route path="/galeria" element={<PagGaleria />} />
+        <Route path="/productos" element={<PagTable />} /> {/* Ruta para la tabla de productos */}
+        <Route path="/productos/:id" element={<PagProducto />} />
+        <Route path="/contacto" element={<PagContacto />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
