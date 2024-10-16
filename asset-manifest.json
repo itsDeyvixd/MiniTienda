@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MiniTienda/static/css/main.d221dc40.css",
+    "main.js": "/MiniTienda/static/js/main.581d0b90.js",
+    "index.html": "/MiniTienda/index.html",
+    "main.d221dc40.css.map": "/MiniTienda/static/css/main.d221dc40.css.map",
+    "main.581d0b90.js.map": "/MiniTienda/static/js/main.581d0b90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d221dc40.css",
+    "static/js/main.581d0b90.js"
+  ]
+}
