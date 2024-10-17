@@ -18,7 +18,7 @@ const CompProductCard = ({ product }) => {
                     {product.description.length > MAX_DESCRIPTION_LENGTH && '...'}
                 </Card.Text>
                 <Card.Text>Precio: ${product.price}</Card.Text>
-                <Link to={`/productos/${product.id}`}>
+                <Link to={`/MiniTienda/productos/${product.id}`}>
                     <Button variant="primary">Ver Detalles</Button>
                 </Link>
             </Card.Body>
