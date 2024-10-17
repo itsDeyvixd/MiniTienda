@@ -12,11 +12,11 @@ const App = () => {
     <Router>
       <CompNavbar />
       <Routes>
-        <Route path="/" element={<PagPrincipal />} />
-        <Route path="/galeria" element={<PagGaleria />} />
-        <Route path="/productos" element={<PagTable />} /> {/* Ruta para la tabla de productos */}
-        <Route path="/productos/:id" element={<PagProducto />} />
-        <Route path="/contacto" element={<PagContacto />} />
+        <Route path="/MiniTienda" element={<PagPrincipal />} />
+        <Route path="MiniTienda/galeria" element={<PagGaleria />} />
+        <Route path="MiniTienda/productos" element={<PagTable />} /> {/* Ruta para la tabla de productos */}
+        <Route path="MiniTienda/productos/:id" element={<PagProducto />} />
+        <Route path="MiniTienda/contacto" element={<PagContacto />} />
       </Routes>
     </Router>
   );
